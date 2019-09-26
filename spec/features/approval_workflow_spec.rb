@@ -1,4 +1,3 @@
-require 'rails helper'
 
 describe 'navigate' do
   before do
@@ -14,9 +13,10 @@ describe 'navigate' do
     it 'has a status that can be edited on the form' do
       visit edit_post_path(@post)
 
-      check 'id'
+      choose('post_status_approved')
+      click_on "Save"
 
-      expect(@post.status).to eq('approved')
+      expect(@post.reload.status).to eq('approved')
     end
   end
 end
