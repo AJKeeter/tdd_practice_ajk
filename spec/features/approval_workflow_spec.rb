@@ -1,4 +1,3 @@
-
 describe 'navigate' do
   before do
     @admin_user = FactoryBot.create(:admin_user)
