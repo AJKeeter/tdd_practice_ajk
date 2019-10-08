@@ -37,7 +37,7 @@ describe 'navigate' do
 
       visit posts_path
 
-      expect(page).to_not have_content(/This post shouldn't be seen mayne/)
+      expect(page).to_not have_content(/This post shouldn't be seen/)
     end
   end
 
