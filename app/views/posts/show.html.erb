@@ -2,8 +2,6 @@
   <h2><%= @post.rationale %></h2>
 </div>
 
-<hr>
-
 <div class="well">
   <div>
     <h3><span>Overtime Amount Requested:</span> <%= @post.overtime_request %></h3>
@@ -21,3 +19,5 @@
     <h3><span>Current Stage of Approval:</span> <%= @post.status %></h3>
   </div>
 </div>
+
+<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-primary' if policy(@post).update? %>
