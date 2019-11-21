@@ -41,3 +41,4 @@ gem 'administrate'
 gem 'bourbon'
 gem 'pundit'
 gem 'twilio-ruby'
+gem 'dotenv-rails', :groups => [:development, :test]
